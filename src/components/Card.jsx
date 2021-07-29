@@ -26,7 +26,7 @@ export default function Card(props) {
           <div className={styles.titulo}>
             <p>{props.name}</p>
             <div className={styles.icon}>
-              <img src={`http://openweathermap.org/img/wn/${props.img}@2x.png`} alt="nube_icon"/>
+              <img src={`https://openweathermap.org/img/wn/${props.img}@2x.png`} alt="nube_icon"/>
             </div>
           </div>
 
