@@ -19,7 +19,7 @@ export default function Card(props) {
             {
               (props.photo !== undefined)
               ? <img src={props.photo} alt=''/>
-              : <img src='/image-placeholder.png' alt=''/>
+              : <img src='https://services.meteored.com/img/article/-por-que-las-nubes-no-se-caen--7332-1_1024.jpg' alt=''/>
             }
           </div>
 
