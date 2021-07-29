@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.indiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url('https://images.unsplash.com/photo-1618477202872-89cec6f8d62e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+  /* background-image: url('https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTk2fHxwaW5rJTIwc2t5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'); */
+  background-size: cover;
+ 
+}
+
+.tit-app{
+  margin-top:50px;
+  display: flex;
+  height: 150px;
+  align-items: center;
+  justify-content: flex-start ;
+  
+}
+
+.tit-app h2{
+  font-size: 5vh;
+  font-weight: 700;
+  color: rgb(31, 177, 221);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tit-app img{
+  width: 100px;
+  margin-left: 20px;
+}
+
+.tit-app .contFecha{
+  color: #8795af;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: fit-content;
+}
+
+.tit-app .contFecha p{
+  margin: 0;
+  
+}
+
+.tit-app .contFecha .dia{
+  font-size: 4vh;
+  border-bottom: 1px solid #c8ccd3;
+}
+
+.tit-app .contFecha .mes{
+  font-size: 3vh;
+}
+
+.tit-app .contFecha .año{
+  font-size: 3vh;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
