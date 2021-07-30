@@ -23,7 +23,7 @@ function App() {
       .then(r => r.json())
       .then((recurso) => {
         if(recurso.total === 0){
-          console.log('muelte');
+          console.log('re mal la vida');
           
         }
         else lugar = recurso.hits[0].webformatURL;
