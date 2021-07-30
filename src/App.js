@@ -13,21 +13,23 @@ function App() {
   const [cities, setCities] = useState([]);
 
   function onSearch(ciudad) {
-    // const apiKey = 'aecd0c9e9001d8886987e2cd59a4b048';
     const apiKey   = process.env.REACT_APP_APIKEY;
-    const apyKey_2 = process.env.REACT_APP_APIKEY_2;
+    // const apiKey_2 = process.env.REACT_APP_APIKEY_2;
+    const apiKey_3 = process.env.REACT_APP_APIKEY_3;
     // const lugar=ciudad;
     let lugar;
-    
-    fetch(`https://pixabay.com/api/?key=${apyKey_2}&q=${ciudad}`)
+    // hihi
+    // https://api.unsplash.com/search/collections/?query=paris&client_id=YPK1yyj4bYpif0QMyU07NG0qjB5t-AFDZ9mXXT0l1xs&categorie=places
+    fetch(`https://api.unsplash.com/search/photos/?query=${ciudad}&client_id=${apiKey_3}`)
       .then(r => r.json())
       .then((recurso) => {
+        console.log(recurso);
         if(recurso.total === 0){
           console.log('re mal la vida');
-          
         }
-        else lugar = recurso.hits[0].webformatURL;
-        // 
+        else lugar = recurso.results[0].urls.small;
+        // else console.log(recurso.results[0].urls.small)
+        
         
     });
     
