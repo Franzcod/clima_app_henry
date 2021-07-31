@@ -11,7 +11,6 @@ export default function Card(props) {
   // acá va tu código
   return <div className={styles.div}>
           
-
           <div className={styles.foto}>
             <div className={styles.iconCont} onClick={props.onClose}>
               {props.onClose && <Cancel className={styles.iconCancel} color="primary" />}
@@ -33,7 +32,7 @@ export default function Card(props) {
           <div className={styles.temp}>
               <h5>Temp</h5>
               <h5>{(props.temp).toFixed(2)}°</h5>
-            </div>
+          </div>
 
           <div className={styles.contTemps}>
             <div >

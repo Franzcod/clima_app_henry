@@ -1,12 +1,20 @@
+
+
 .div{
-    width: 300px;
+    width: 15vw;
+    height: fit-content;
+    min-width: 250px;
+    max-width: 350px;
+    /* width: 300px; */
     background-color: #ffffff9c;
     border-radius: 16px;
     margin: 30px 35px;
     box-shadow: rgba(0, 0, 0, 0.548) 3px 3px 7px;
     backdrop-filter: blur(8px);
-
+    
 }
+
+
 
 .div:hover{
     box-shadow: rgba(0, 0, 0, 0.548) 5px 5px 10px;
@@ -24,7 +32,8 @@
 .foto .iconCont{
     background-color: transparent;
     position: absolute;
-    margin-left: 250px;
+    margin-left: 10px;
+    display: block;
 }
 
 .foto .iconCont .iconCancel{
@@ -36,10 +45,11 @@
 
 .foto .iconCont .iconCancel:hover{
     color: red;
+    display: block;
 }
 
 .temp h5{
-    font-size: 2.3em;
+    font-size: calc(1.25rem + 0.5rem);
 }
 
 .icon {

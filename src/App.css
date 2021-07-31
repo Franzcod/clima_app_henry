@@ -19,6 +19,7 @@
 }
 
 .tit-app{
+  margin-left: 10vw;
   margin-top:50px;
   display: flex;
   height: 150px;
@@ -37,6 +38,7 @@
 .tit-app img{
   width: 100px;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .tit-app .contFecha{

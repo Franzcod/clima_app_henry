@@ -36,7 +36,7 @@ export default function Titulo() {
       },[]);
 
   return <div className="tit-app">
-            <img alt=''/>
+            
             <h2>Clima App</h2>
             <img src='https://cdn.pixabay.com/photo/2016/05/20/20/20/weather-1405870_640.png'  alt="" />
 

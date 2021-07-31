@@ -28,9 +28,12 @@
 .contForm .btn{
     background-color: transparent;
     border: none;
-    margin-left: 20px;
+    margin: 15px 40px 20px 20px;
+    /* margin-left: 20px; */
+    /* margin-top: 20px; */
     font-weight: bold;
-    color: rgba(26, 59, 248, 0.596);
+    /* color: rgba(26, 59, 248, 0.596); */
+    color: rgb(31, 177, 221);
     align-self: center;
     font-size: 20px;
 }
