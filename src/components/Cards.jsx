@@ -12,7 +12,7 @@ export default function Cards( {cities, onClose}) {
     
     <Card
       id={city.id}
-      key={city.name}
+      key={city.id}
       photo={city.photo}
       name={city.name}
       temp={city.temp}

@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import './normalize.css';
 import Titulo from './components/Titulo.jsx';
+import DatosCiudad from './components/DatosCiudad.jsx';
 import Footer from './components/Footer.jsx';
 import OptionsRoute from './components/OptionsRoute.jsx';
 import PrincipalComp from './components/PrincipalComp.jsx';
@@ -13,6 +14,8 @@ import { Route } from 'react-router-dom';
 
 
 function App() {
+
+  // cities.filter(c => c.id === parseInt(match.params.ciudadId))
   
   return (
     <div className="App">
@@ -27,13 +30,15 @@ function App() {
         component={OptionsRoute}
       />
 
-      <Route
+      <Route     
+        exact   
         path='/about'
         component={About}
       />
 
       <Route
-        path='/home'
+        exact
+        path='/'
         component={PrincipalComp}
       />
 
@@ -43,10 +48,11 @@ function App() {
       />
 
 
+      <Route
+        path='/ciudad/:ciudad'
+        render={({match})=> <DatosCiudad ciudad={match.params.ciudad}/>}
+      />
 
-      
-      
-      
     </div>
   );
 
