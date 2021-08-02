@@ -53,31 +53,40 @@ export default function DatosCiudad(props) {
 
         console.log(citie.name);
 
+        var backgroudConFoto = {
+            backgroundColor: 'rgba(255,255,255,0.)',
+            backgroundImage: `url('${citie.photo}')`,
+            backgroundSize: 'cover',
+            backdropFilter: 'blur(36px)',
+            padding: '10px',
+          };
+
+        // var divRey = {
+        //     padding: '10px',
+        // }
+
     return (
-        <div>
+        <div style={backgroudConFoto}>
             <div className={styles.espacioSup}></div>
             <div  className={styles.cont}>
-                <div className={styles.contImg}>
-                    <img src={citie.photo} alt=''/>
-                </div>
-                <div className={styles.tarjetaAbout}>
-                
-                        <div className="ciudad">
-                            <div className="container">
-                                <h2>{citie.name}</h2>
-                                
-                                <div className="info">
-                                    <div>Temperatura: {citie.temp} ºC</div>
-                                    <div>Clima: {citie.weather}</div>
-                                    <div>Viento: {citie.wind} km/h</div>
-                                    <div>Cantidad de nubes: {citie.clouds}</div>
-                                    <div>Latitud: {citie.latitud}º</div>
-                                    <div>Longitud: {citie.longitud}º</div>
-                                </div>
-                            </div>
+                <div  className={styles.contPrinc}>
+                    <div className={styles.contImg}>
+                        <img src={citie.photo} alt=''/>
                     </div>
-                    
+
+                    <div className={styles.tarjetaAbout}>      
+                        <h2>{citie.name}</h2>
+                        <div className="info">
+                            <div>Temperatura: {citie.temp} ºC</div>
+                            <div>Clima: {citie.weather}</div>
+                            <div>Viento: {citie.wind} km/h</div>
+                            <div>Cantidad de nubes: {citie.clouds}</div>
+                            <div>Latitud: {citie.latitud}º</div>
+                            <div>Longitud: {citie.longitud}º</div>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
         </div>
     )

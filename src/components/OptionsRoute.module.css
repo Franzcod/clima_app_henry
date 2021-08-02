@@ -11,10 +11,12 @@
 }
 
 .cont p{
-    font-size: 30px;
-    margin-left: 30px;
-    margin-top: 10px;
+    font-size: calc(1em + 1vw);
+    margin:  8px  15px;
+    /* align-items: center; */
+    /* margin: auto; */
+    /* margin-top: 10px; */
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    color: rgb(31, 177, 221);
+    color: rgba(31, 177, 221, 0.76);
 }

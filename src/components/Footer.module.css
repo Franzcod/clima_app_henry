@@ -1,11 +1,12 @@
 .cont{
-    position: fixed;
+    position: relative;
   width: 100%;
   /* height: 200px; */
   /* left: 50%; */
+
   bottom: 0;
 }
 
 .cont p{
-    margin-left: 80%;
+    /* margin-left: 80%; */
 }

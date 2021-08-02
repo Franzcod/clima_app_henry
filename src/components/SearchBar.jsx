@@ -1,6 +1,8 @@
 import React from 'react';
 import style from './SearchBar.module.css';
 
+import { GiMagnifyingGlass } from "react-icons/gi";
+
 
 export default function SearchBar({onSearch}) {
   const [search, setSearch] = React.useState('');
@@ -27,7 +29,7 @@ export default function SearchBar({onSearch}) {
         onKeyPress={(e) => {if(e.key === 'Enter') handleOnSearch()}}
       />
       <button   onClick={handleOnSearch}   className={style.btn}>
-       ADD  
+       <GiMagnifyingGlass/>
       </button> 
 
 

@@ -42,15 +42,18 @@ function App() {
         component={PrincipalComp}
       />
 
-      <Route
-        path='/'
-        component={Footer}
-      />
+      
 
 
       <Route
         path='/ciudad/:ciudad'
         render={({match})=> <DatosCiudad ciudad={match.params.ciudad}/>}
+      />
+
+
+      <Route
+        path='/'
+        component={Footer}
       />
 
     </div>

@@ -1,6 +1,7 @@
 
 
 import React, { useState ,useEffect} from 'react';
+import styles from './Titulo.module.css';
 // import '../fecha.js'
 
 export default function Titulo() {
@@ -35,12 +36,12 @@ export default function Titulo() {
         setAnio(anio)
       },[]);
 
-  return <div className="tit-app">
+  return <div className={styles.titApp}>
             
-            <h2>Clima App</h2>
+            <h2>ClimApp</h2>
             <img src='https://cdn.pixabay.com/photo/2016/05/20/20/20/weather-1405870_640.png'  alt="" />
 
-            <div className="contFecha">
+            <div className={styles.contFecha}>
                 
                 <p  className="dia">{dia}</p>
                 <p  className="mes">{mes}</p>

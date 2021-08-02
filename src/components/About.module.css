@@ -1,7 +1,7 @@
 
 
 .espacioSup{
-    height: 132px;
+    height: 78px;
     background-color: transparent;
 }
 
@@ -14,7 +14,9 @@
     flex-direction: row;
     justify-content: center;
 }
-
+h2{
+    font-size: calc(1em + 2vw);
+}
 
 .tarjetaAbout{
     padding: 20px;
@@ -27,7 +29,8 @@
     animation-name: example;
     animation-duration: 1s;
     color: black;
-    font-size: 22px;
+    /* font-size: 22px; */
+    font-size: calc(1em + 1vw);
     line-height : 20px;
     font-weight: 600;
 }
@@ -44,4 +47,12 @@
     50%  {width: 40%;color: transparent;} */
     50%  {width: 50%;color: transparent; height: 70%}
     100% {width: 60%; color: black;}
+  }
+
+
+  @media (max-width: 650px) {
+      .cont{
+          height: fit-content;
+          padding-bottom: 25px;
+      }
   }

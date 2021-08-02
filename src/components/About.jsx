@@ -10,7 +10,7 @@ export default function About() {
             <div className={styles.espacioSup}></div>
             <div  className={styles.cont}>
                 <div className={styles.tarjetaAbout}>
-                    <h2>Aplicacion de clima</h2>
+                    <h2>ClimApp</h2>
                     <p>Proyecto personal de Francisco Palacios </p>
                     <p>para el curso de Henry</p>
                     <p>Temas aplicados:</p>
