@@ -29,7 +29,7 @@ export default function SearchBar({onSearch}) {
         onKeyPress={(e) => {if(e.key === 'Enter') handleOnSearch()}}
       />
       <button   onClick={handleOnSearch}   className={style.btn}>
-       <GiMagnifyingGlass/>
+        <GiMagnifyingGlass/>
       </button> 
 
 

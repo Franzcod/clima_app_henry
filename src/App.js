@@ -7,6 +7,9 @@ import Footer from './components/Footer.jsx';
 import OptionsRoute from './components/OptionsRoute.jsx';
 import PrincipalComp from './components/PrincipalComp.jsx';
 
+// import fetchCity from "./services/fetchCity";
+
+
 import About from './components/About.jsx';
 
 // import { Link } from 'react-router-dom';
@@ -14,9 +17,8 @@ import { Route } from 'react-router-dom';
 
 
 function App() {
-
-  // cities.filter(c => c.id === parseInt(match.params.ciudadId))
   
+
   return (
     <div className="App">
 

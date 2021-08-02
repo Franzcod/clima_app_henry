@@ -1,5 +1,6 @@
 import React, {useState ,useEffect} from 'react'
 import styles from './DatosCiudad.module.css';
+import BackdropFilter from "react-backdrop-filter";
 
 
 export default function DatosCiudad(props) {
@@ -57,7 +58,7 @@ export default function DatosCiudad(props) {
             backgroundColor: 'rgba(255,255,255,0.)',
             backgroundImage: `url('${citie.photo}')`,
             backgroundSize: 'cover',
-            backdropFilter: 'blur(36px)',
+            // backdropFilter: 'blur(36px)',
             padding: '10px',
           };
 
@@ -66,8 +67,12 @@ export default function DatosCiudad(props) {
         // }
 
     return (
+      <BackdropFilter
+        
+      filter={"blur(10px) sepia(50%)"}
+      >
         <div style={backgroudConFoto}>
-            <div className={styles.espacioSup}></div>
+            {/* <div className={styles.espacioSup}></div> */}
             <div  className={styles.cont}>
                 <div  className={styles.contPrinc}>
                     <div className={styles.contImg}>
@@ -89,5 +94,6 @@ export default function DatosCiudad(props) {
                 
             </div>
         </div>
+        </BackdropFilter>
     )
 }

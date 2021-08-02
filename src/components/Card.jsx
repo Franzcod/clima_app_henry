@@ -22,7 +22,7 @@ export default function Card(props) {
                   : <img src='https://services.meteored.com/img/article/-por-que-las-nubes-no-se-caen--7332-1_1024.jpg' alt=''/>
                 }
               </div>
-            <Link to={`/ciudad/${props.name}`} >   
+            <Link style={{ textDecoration: 'none' }} to={`/ciudad/${props.name}`} >   
               <div className={styles.titulo}>
                 <p>{props.name}</p>
                 <div className={styles.icon}>
