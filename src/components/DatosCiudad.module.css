@@ -1,11 +1,9 @@
-
-
-.espacioSup{
+.espacioSup {
     height: 100px;
     background-color: transparent;
 }
 
-.cont{
+.cont {
     height: 522px;
     width: 100%;
     /* background-color: aqua; */
@@ -15,10 +13,10 @@
     flex-direction: row;
     justify-content: center;
     margin-bottom: 150px;
-    
+
 }
 
-.contPrinc{
+.contPrinc {
     padding: 20px;
     background-color: rgba(237, 229, 245, 0.336);
     backdrop-filter: blur(6px);
@@ -37,21 +35,20 @@
     /* margin:  auto auto;  */
     /* margin-left:  auto; */
     /* margin-right: auto;  */
-    
+
 }
 
-.cont .contImg img{
+.cont .contImg img {
     border-radius: 16px;
     max-height: 40vh;
-    margin-top:  auto;
+    margin-top: auto;
     align-items: center;
-    position:relative; 
+    position: relative;
     top: 10%
-    
 }
 
 
-.tarjetaAbout{
+.tarjetaAbout {
     margin-right: 40px;
     padding: 10px;
     /* margin: 30px 20px; */
@@ -61,53 +58,67 @@
     border-radius: 16px;
     backdrop-filter: blur(6px);
     animation-name: example;
-    animation-duration: 1s;
+    animation-duration: 2s;
     color: black;
     font-size: 22px;
-    line-height : 25px;
+    line-height: 25px;
     font-weight: 600;
 }
 
 
 
 @keyframes example {
-    0%   {width: 10%; color: transparent; height: 70%}
+    0% {
+        width: 10%;
+        color: transparent;
+        height: 70%
+    }
+
     /* 25%  {width: 20%;color: transparent;}
     50%  {width: 40%;color: transparent;} */
-    50%  {width: 50%;color: transparent; height: 70%}
-    100% {width: 50%; color: black;}
-  }
-
-
-  @media (max-width: 650px) {
-    .contPrinc {
-      background-image: none;
-      flex-direction: column;
+    50% {
+        width: 50%;
+        color: transparent;
+        height: 70%
     }
-    .backgroudConFoto{
+
+    100% {
+        width: 50%;
+        color: black;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .contPrinc {
+        background-image: none;
+        flex-direction: column;
+    }
+
+    .backgroudConFoto {
         background-image: none;
     }
 
-    .cont .contImg{
+    .cont .contImg {
         background-color: rgba(0, 255, 255, 0.049);
         width: 100%;
         height: 330px;
-        margin-left:  auto;
+        margin-left: auto;
         margin-right: auto;
     }
 
-    .tarjetaAbout{
+    .tarjetaAbout {
         width: 80%;
-        margin-left:  auto;
+        margin-left: auto;
         margin-right: auto;
         background-color: rgba(237, 229, 245, 0.39);
     }
-  }
+}
 
 
-  @media (max-width: 450px) {
-    .cont .contImg img{
+@media (max-width: 450px) {
+    .cont .contImg img {
         width: 80vw;
     }
 
-  }
+}

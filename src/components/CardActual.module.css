@@ -1,6 +1,4 @@
-
-
-.divRey{
+.divRey {
     width: 70vw;
     height: fit-content;
     min-width: 250px;
@@ -16,11 +14,11 @@
     align-items: center;
 }
 
-.div:hover{
+.div:hover {
     box-shadow: rgba(0, 0, 0, 0.548) 10px 10px 20px;
 }
 
-.foto{
+.foto {
     /* /* padding: 2px; */
     /* background-color: red;  */
     height: 30vh;
@@ -30,11 +28,12 @@
     align-items: center;
 }
 
-.foto img{
+.foto img {
     width: 95%;
     height: 100%;
     border-radius: 16px;
 }
+
 /* .foto img{
     border-radius: 16px;
   
@@ -45,7 +44,7 @@
 } */
 
 
-.contGral{
+.contGral {
     background-color: transparent;
     width: 60%;
     padding: 15px;
@@ -58,31 +57,33 @@
 } */
 
 .icon {
-    background-color: rgba(26, 59, 248, 0.596);
+    background-color: rgba(102, 122, 236, 0.596);
     width: fit-content;
     border-radius: 50%;
 }
 
-.titulo{
+.titulo {
     color: rgb(3, 53, 53);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around ;
+    justify-content: space-around;
     margin-bottom: 5px;
     /* margin: auto; */
     font-size: calc(1em + .8vw);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.titulo p{
+.titulo p {
     /* margin: 0; */
-    font-size: calc(1em + .8vw);;
+    font-size: calc(1em + .8vw);
+    ;
 }
 
-.titulo .icon img{
+.titulo .icon img {
     width: 50px;
 }
+
 /* 
 
 .contDatos1{
@@ -99,24 +100,24 @@
 
 
 
-.contDatos1{
+.contDatos1 {
     color: black;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around ;
+    justify-content: space-around;
     background-color: rgba(240, 240, 168, 0.164);
     border-radius: 16px;
     margin-bottom: 8px;
-    padding: 10px ;
+    padding: 10px;
 }
 
-.contDatos2{
+.contDatos2 {
     color: rgb(3, 53, 53);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around ;
+    justify-content: space-around;
     margin-bottom: 5px;
     /* margin: auto; */
     font-size: calc(1em + .8vw);
@@ -125,10 +126,11 @@
 
 
 @media (max-width: 650px) {
-    .foto{
+    .foto {
         display: none;
     }
-    .contGral{
+
+    .contGral {
         width: 100%;
     }
 }
