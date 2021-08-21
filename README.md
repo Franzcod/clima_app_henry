@@ -10,7 +10,6 @@ Desde la carpeta "homework" se pueden ejecutar los siguientes comandos:
 
 No es necesario volver a correr el proyecto cada vez que se realice un cambio sino que se verá automáticamente reflejando en el navegador.
 
-> Hay veces que por problemas de configuración los cambios no se ven automáticamente reflejados en el navegador por lo que si te ocurre esto la opción rápida sería parar la ejecición del proyecto (Ctrl + C) y volver a ejecutar `npm start`. De todas formas si te ocurre esto contactate con tu PM.
 
 ![cap_clima_app](https://user-images.githubusercontent.com/53352272/127555407-91047fff-d109-4af4-bc15-06645c247bbb.jpg)
 
